@@ -1,0 +1,22 @@
+Text to Audio Convertion
+---
+tags:
+  - Convert text to audio file
+parameters:
+    - name: input_text
+      in: query
+      type: string
+      required: true
+      description: text to be converted to audio
+responses:
+  500:
+    description: Error Please enter the text!
+  200:
+    description: text to audio
+    schema:
+      id: Input-Text
+      properties:
+        Input Text:
+          type: string
+          description: Text to be converted to audio
+          default: 'NA'
